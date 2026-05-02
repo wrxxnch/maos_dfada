@@ -1,0 +1,39 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --color-lilac-50: #f5f0f7;
+  --color-lilac-100: #eadfed;
+  --color-lilac-200: #d5c0dc;
+  --color-lilac-300: #bca1cb;
+  --color-lilac-400: #9e7cb3;
+  --color-lilac-500: #845c9e;
+  --color-lilac-600: #6a4980;
+  --color-lilac-700: #543a65;
+  --color-lilac-800: #3f2c4b;
+  --color-lilac-900: #2b1d33;
+}
+
+@layer base {
+  body {
+    @apply bg-lilac-50 text-slate-900 overflow-x-hidden;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/30 backdrop-blur-md border border-white/20 shadow-xl;
+  }
+  
+  .glass-dark {
+    @apply bg-lilac-900/10 backdrop-blur-lg border border-lilac-200/20 shadow-2xl;
+  }
+}
+
+/* Custom Swiper Styles */
+.swiper-pagination-bullet-active {
+  background: var(--color-lilac-500) !important;
+}
+
