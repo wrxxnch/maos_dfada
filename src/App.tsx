@@ -100,7 +100,7 @@ export default function App() {
       {/* Global Background */}
       <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
         <img 
-          src="/holographic_bg.webp" 
+          src="assets/iris.png" 
           alt="" 
           className="w-full h-full object-cover opacity-20 mix-blend-multiply"
           referrerPolicy="no-referrer"
@@ -477,14 +477,6 @@ export default function App() {
                 className="w-10 h-10 rounded-full bg-lilac-50 flex items-center justify-center text-lilac-600 hover:bg-lilac-600 hover:text-white transition-all"
               >
                 <Instagram size={20} />
-              </a>
-              <a 
-                href="https://www.instagram.com/_.studio_maos_dfada._" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-lilac-50 flex items-center justify-center text-lilac-600 hover:bg-lilac-600 hover:text-white transition-all"
-              >
-                <Heart size={20} />
               </a>
             </div>
           </div>
